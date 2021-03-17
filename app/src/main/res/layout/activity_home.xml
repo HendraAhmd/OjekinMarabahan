@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                app:layout_collapseMode="parallax"
+                android:fitsSystemWindows="true"
+                android:id="@+id/flipper">
+            </ViewFlipper>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/menuutama"
+            android:layout_below="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:fontFamily="@font/nlight"
+                android:text="Layanan Kami"
+                android:padding="1dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/marqueetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="@font/nlight"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textSize="16dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/materialYellow"/>
+
+            <LinearLayout
+                android:id="@+id/card1"
+                android:clipToPadding="false"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/food"
+                    app:cardCornerRadius="20dp"
+                    app:cardMaxElevation="40dp"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:tint="@color/homePrimary"
+                            android:src="@drawable/food"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nlight"
+                            android:text="JekFood"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:textSize="16dp"
+                            android:textColor="@color/homePrimary"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/menu_send"
+                    app:cardCornerRadius="20dp"
+                    app:cardMaxElevation="40dp"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/jeksend"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nlight"
+                            android:text="JekSend"
+                            android:padding="5dp"
+                            android:textSize="16dp"
+                            android:gravity="center"
+                            android:textColor="@color/homePrimary"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card2"
+                android:clipToPadding="false"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/servise"
+                    app:cardCornerRadius="20dp"
+                    app:cardMaxElevation="40dp"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/jekride"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="JekRide"
+                            android:fontFamily="@font/nlight"
+                            android:padding="5dp"
+                            android:textSize="16dp"
+                            android:gravity="center"
+                            android:textColor="@color/homePrimary"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/newProduct"
+                    app:cardCornerRadius="20dp"
+                    app:cardMaxElevation="40dp"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/cart"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nlight"
+                            android:text="Keranjang Saya"
+                            android:textSize="16dp"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/homePrimary"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/promotoko"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:fontFamily="@font/nlight"
+                android:padding="1dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/promo1"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="360dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:id="@+id/promo2"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="360dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:id="@+id/promo3"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="360dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:id="@+id/promo4"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="360dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:id="@+id/promo5"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="360dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:id="@+id/promo6"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="360dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:id="@+id/promo7"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="360dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:id="@+id/promo8"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="360dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:id="@+id/promo9"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="360dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:id="@+id/promo10"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="360dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="120dp"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

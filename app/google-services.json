@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "656667769060",
+    "firebase_url": "https://ojekin-marabahan.firebaseio.com",
+    "project_id": "ojekin-marabahan",
+    "storage_bucket": "ojekin-marabahan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656667769060:android:cc6c88f2dcac8ab51054f1",
+        "android_client_info": {
+          "package_name": "com.puterabaritoinnovation.ojekinmarabahan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656667769060-s7l2lmf8pqnb8d3ejjjou02o5ie2348l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.puterabaritoinnovation.ojekinmarabahan",
+            "certificate_hash": "feed8cd2a7ee6e7ed0cbc9d5d05b6431a4e379f5"
+          }
+        },
+        {
+          "client_id": "656667769060-dang8fp85eclmq4a79jf0do76483kgmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD6XUpurRToCkJ-1rOWYvpk2v_dJiYwtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656667769060-dang8fp85eclmq4a79jf0do76483kgmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

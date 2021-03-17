@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/join_now_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/nlight"
+        android:text="Buat Akun Baru"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/info_forms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/join_now_create_account"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="9dp"
+        android:textAlignment="center"
+        android:textColor="@color/blackPrimary"
+        android:fontFamily="@font/nlight"
+        android:text="Silahkan isi form informasi \ndi bawah ini"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_below="@id/info_forms"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="12dp"
+                android:text="Nama Pengguna"
+                android:textColor="@color/blackPrimary"
+                android:textSize="16sp"
+                android:fontFamily="@font/nlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/register_username_input"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"
+                android:paddingLeft="12dp"
+                android:lines="1"
+                android:fontFamily="@font/nlight"
+                android:background="@drawable/bg_input_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="12dp"
+                android:text="Password"
+                android:fontFamily="@font/nlight"
+                android:textColor="@color/blackPrimary"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/register_password_input"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
+                android:paddingLeft="12dp"
+                android:lines="1"
+                android:fontFamily="@font/nlight"
+                android:background="@drawable/bg_input_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="12dp"
+                android:text="Nomor WhatsApp"
+                android:textColor="@color/blackPrimary"
+                android:textSize="16sp"
+                android:fontFamily="@font/nlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/register_phone_input"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary"
+                android:paddingLeft="12dp"
+                android:lines="1"
+                android:fontFamily="@font/nlight"
+                android:background="@drawable/bg_input_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_below="@+id/linear_layout2"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/orange_buttons"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nlight"
+        android:text="Buat akun"
+        android:textColor="@android:color/white"
+        />
+
+    <ImageView
+        android:id="@+id/back_btn_tostart"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linear_layout2"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="50dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_arrow_yello"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

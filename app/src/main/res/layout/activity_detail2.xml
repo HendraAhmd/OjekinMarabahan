@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail2Activity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/product_image_details"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:background="@drawable/loading_shape"
+                android:layout_below="@+id/product_image_details"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="24dp"
+                android:paddingTop="12dp">
+
+                <TextView
+                    android:id="@+id/product_name_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nlight"
+                    android:textStyle="bold"
+                    android:hint="Product Name"
+                    android:textColor="@color/blackPrimary"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/product_price_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nlight"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:hint="Price"
+                    android:textColor="@color/materialYellow"
+                    android:textSize="20sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#ededed"/>
+
+                <LinearLayout
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nlight"
+                            android:textStyle="bold"
+                            android:text="Deskripsi"
+                            android:textColor="@color/blackPrimary"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/product_description_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nlight"
+                            android:layout_marginTop="4dp"
+                            android:hint="this is description"
+                            android:textColor="@color/blackPrimary"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/store"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nlight"
+                            android:text="Nama Toko"
+                            android:textColor="@color/blackPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/product_store_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nlight"
+                            android:layout_marginTop="4dp"
+                            android:hint="this is store name"
+                            android:textColor="@color/blackPrimary"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/placeh"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nlight"
+                            android:textStyle="bold"
+                            android:text="Alamat Toko"
+                            android:textColor="@color/blackPrimary"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/product_contact_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nlight"
+                            android:layout_marginTop="4dp"
+                            android:hint="this is store address"
+                            android:textColor="@color/blackPrimary"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nlight"
+                            android:text="Jumlah Pesanan"
+                            android:textColor="@color/blackPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnminus"
+                        android:layout_width="25dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/btnmines" />
+
+                    <TextView
+                        android:id="@+id/jumlahpesanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:fontFamily="@font/nlight"
+                        android:hint="1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/btnplus"
+                        android:layout_width="25dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/btnpls" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/tambahan_pesanan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nlight"
+                            android:layout_marginTop="4dp"
+                            android:lines="2"
+                            android:inputType="text"
+                            android:hint="Tuliskan jika ada tambahan"
+                            android:textColor="@color/blackPrimary"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/checkout_btn"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_below="@+id/l1"
+                android:fontFamily="@font/nlight"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/orange_buttons"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Tambahkan ke Keranjang"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

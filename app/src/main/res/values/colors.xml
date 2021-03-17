@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E73028</color>
+    <color name="colorPrimaryDark">#990E09</color>
+    <color name="colorAccent">#FFAE0A</color>
+
+    <color name="maroonPrimary">#990E09</color>
+    <color name="orangePrimary">#E73028</color>
+    <color name="grayPrimary">#707070</color>
+    <color name="graySecondary">#8D8D8D</color>
+    <color name="blackPrimary">#21272C</color>
+
+    <color name="homePrimary">#E73028</color>
+    <color name="homePrimaryDark">#990E09</color>
+    <color name="white">#ffff</color>
+    <color name="lightGreyLine">#ededed</color>
+    <color name="deepPurple">#7c4dff</color>
+    <color name="materialYellow">#FFAE0A</color>
+    <color name="materialGreen">#00bfa5</color>
+    <color name="pinkAccent">#FF4081</color>
+</resources>
